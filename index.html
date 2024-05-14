@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- link awesome icome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Rock-paper-scissor</h1>
+            
+        </header>
+        <main>
+            <!-- inizio giocatore 1 -->
+            <div class="titoloGiocatori">
+                <div class="contSceltaGiocatore1">
+                    <button id="giocatoreCasuale1">Giocatore Casuale</button>
+                    <span>O</span>
+                    <input id="inserimentoNomeG1" type="text" placeholder="Scrivi il tuo nome">
+                    <button id="buttonG1">Invio</button>
+                </div>
+                <div class="contnomeGiocatore1 rendiInvisibile styleCont">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <h2 id="giocatore1"></h2>
+                    <span class="errore"></span>
+                </div>
+                
+            </div>
+            <!-- versus -->
+            <div class="titoloGiocatori vs">
+                <h2>VS</h2>
+            </div>
+            <!-- giocatore 2 -->
+            <div class="titoloGiocatori">
+                <div class="contSceltaGiocatore2">
+                    <button id="giocatoreCasuale2">Giocatore Casuale</button>
+                    <span>O</span>
+                    <input id="inserimentoNomeG2" type="text" placeholder="Scrivi il tuo nome">
+                    <button id="buttonG2">Invio</button>
+                </div>
+                <div class="contnomeGiocatore2 rendiInvisibile styleCont">
+                    <h2 id="giocatore2"></h2>
+                    <span class="errore2"></span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+
+            <!-- mano giocatore 1 -->
+            <div class="contGioco">
+                <div class="carteGiocatore" id="contCarteG1">
+                    <img class="paper" src="img/icon-paper.svg" alt="foto paper">
+                    <img src="img/icon-rock.svg" alt="foto rock">
+                    <img src="img/icon-scissors.svg" alt="foto scissors">
+                </div>
+                <div class="cartaVisibile">
+                    <img src="img/icon-rock.svg" alt="immagine della mano giocata">
+                    <button>Via</button>
+                </div>
+            </div>
+            <!-- mano giocatore 2 -->
+            <div class="contGioco">
+                <div class="carteGiocatore">
+                    <img src="img/icon-paper.svg" alt="foto paper2">
+                    <img src="img/icon-rock.svg" alt="">
+                    <img src="img/icon-scissors.svg" alt="">
+                </div>
+                <div class="cartaVisibile">
+                    <img src="img/icon-rock.svg" alt="immagine della mano giocata">
+                </div>
+            </div>
+            
+        </main>
+
+        <!-- punteggio -->
+        <div class="contRisultati">
+            <div class="contPunteggio">
+                <h2>Punteggio G1</h2>
+                <h2 id="punteggioGiocatore1">5</h2>
+            </div>
+            <div class="contPunteggio">
+                <h2>Punteggio G2</h2>
+                <h2 id="punteggioGiocatore1">5</h2>
+            </div>
+        </div>
+
+        <script src="js/javascript.js"></script>
+    </body>
+</html>

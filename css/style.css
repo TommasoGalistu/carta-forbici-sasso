@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(18, 18, 18);
+    color: white;
+}
+header{
+    margin: auto;
+    text-align: center;
+    padding: 5rem 0;
+    width: 80%;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+main{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.titoloGiocatori{
+    text-align: center;
+    width: 45%;
+    border: 1px solid white;
+    
+}
+
+.titoloGiocatori.vs{
+    width: 10%;
+}
+
+input{
+    height: 2rem;
+    font-size: 1rem;
+}
+.giocatoreCasuale{
+    height: 1.5rem;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+
+}
+
+.contGioco{
+    text-align: center;
+    width: 50%;
+    padding: 2rem 0;
+}
+
+
+
+.carteGiocatore img{
+    border-radius: 50%;
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+    border: 1px solid white;
+    background-color: black;
+}
+
+.carteGiocatore img:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+
+
+.cartaVisibile img{
+    height: 15rem;
+    padding: 2rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+.contnomeGiocatore1{
+    display: flex;
+    align-items: center;
+}
+
+
+.fa-arrow-left{
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+.styleCont span{
+    color: red;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.contnomeGiocatore2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-arrow-right{
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+.giocatore2{
+    
+}
+
+
+
+
+
+
+
+.contRisultati{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    border: 1px solid white;
+    width: 80%;
+}
+
+.contPunteggio{
+    width: 50%;
+}
+
+
+
+@media (max-width: 800px){
+    header, main, .contRisultati{
+        min-width: 400px;
+    }
+    main{
+        flex-direction: column
+    }
+    .contGioco{
+        min-width: 400px;
+    }
+    .titoloGiocatori{
+        min-width: 400px;
+    }
+    .titoloGiocatori.vs{
+        min-width: 400px;
+    }
+    .contRisultati{
+        flex-direction: column;
+    }
+    i{
+        padding: 0 2rem;
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .errore{
+        color: red;
+        padding: 0.1rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1330px){
+    h2{
+        font-size: 2.5rem;
+    }
+}
+
+/* classi da aggiungere javascript */
+
+.rendiInvisibile{
+    display: none;
+}
