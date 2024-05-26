@@ -36,10 +36,7 @@
             <!-- giocatore 2 -->
             <div class="titoloGiocatori">
                 <div class="contSceltaGiocatore2">
-                    <button id="giocatoreCasuale2">Giocatore Casuale</button>
-                    <span>O</span>
-                    <input id="inserimentoNomeG2" type="text" placeholder="Scrivi il tuo nome">
-                    <button id="buttonG2">Invio</button>
+                    <h2>Giocatore Casuale</h2>
                 </div>
                 <div class="contnomeGiocatore2 rendiInvisibile styleCont">
                     <h2 id="giocatore2"></h2>
@@ -53,23 +50,22 @@
             <div class="contGioco">
                 <div class="carteGiocatore" id="contCarteG1">
                     <img class="paper" src="img/icon-paper.svg" alt="foto paper">
-                    <img src="img/icon-rock.svg" alt="foto rock">
-                    <img src="img/icon-scissors.svg" alt="foto scissors">
+                    <img class="rock" src="img/icon-rock.svg" alt="foto rock">
+                    <img class="scissors" src="img/icon-scissors.svg" alt="foto scissors">
                 </div>
                 <div class="cartaVisibile">
-                    <img src="img/icon-rock.svg" alt="immagine della mano giocata">
-                    <button>Via</button>
+                    <img class="cartaGiocatore" src="img/icon-rock.svg" alt="immagine della mano giocata">
+                    <button class="bottoneGioco">Via</button>
+                    <h2 id="scrittaRisultato" class="rendiInvisibile"></h2>
                 </div>
             </div>
             <!-- mano giocatore 2 -->
             <div class="contGioco">
                 <div class="carteGiocatore">
-                    <img src="img/icon-paper.svg" alt="foto paper2">
-                    <img src="img/icon-rock.svg" alt="">
-                    <img src="img/icon-scissors.svg" alt="">
+                    
                 </div>
                 <div class="cartaVisibile">
-                    <img src="img/icon-rock.svg" alt="immagine della mano giocata">
+                    <img class="cartaVisibileImg" src="img/icon-rock.svg" alt="immagine della mano giocata">
                 </div>
             </div>
             
@@ -78,12 +74,12 @@
         <!-- punteggio -->
         <div class="contRisultati">
             <div class="contPunteggio">
-                <h2>Punteggio G1</h2>
-                <h2 id="punteggioGiocatore1">5</h2>
+                <h2 class="nomeGiocatoreUno">Punteggio G1</h2>
+                <h2 id="punteggioGiocatore1">0</h2>
             </div>
             <div class="contPunteggio">
                 <h2>Punteggio G2</h2>
-                <h2 id="punteggioGiocatore1">5</h2>
+                <h2 id="punteggioGiocatore2">0</h2>
             </div>
         </div>
 
